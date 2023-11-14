@@ -17,22 +17,27 @@
         header {
             display: inline-block;
             width: 100%;
+            text-align:center;
         }
 
         h1 {
-            float: left;
+            float: none;
             margin: 0;
         }
 
         nav {
-            float: right;
+            float: none;
+            text-align:center;
+            background-color:black;
             margin-top: 10px;
+            width:100%;
         }
 
         nav a {
             text-decoration: none;
-            color: black;
-            padding: 0 10px;
+            color:white;
+            padding: 10px;
+            display:inline-block;
         }
 
         main {
@@ -40,20 +45,37 @@
         }
 
         img {
-            /* TODO 2: Set the image width so that the 3 images fit in 1 row and fills the browser width */
+            width:33%;
+            box-sizing: border-box;
+            margin-bottom:10px;
         }
 
         /* TODO 3: Add CSS media queries for smaller screens */
         @media only screen and (max-width: 768px) {
 
         /* TODO 4: Center logo */
+        h1{
+            text-align: center;
+        }
 
         /* TODO 5: Shift navigation below logo, add a black background and center all nav items */
+        nav{
+            text-align:center;
+            margin-top:0px;
+        }
         
         /* TODO 6: Stack the 3 images in 1 column */
+        img{
+            width:100%;
+        }
         
         /* TODO 7: Hide the video */
-        
+        iframe{
+            width: 0; 
+            height: 0; 
+            position: absolute;
+            border: 0;
+        }
         }
     </style>
 </head>
